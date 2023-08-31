@@ -4,6 +4,7 @@ html{
 }
 body{
     background: rgba(1,22,41,255);
+    overflow: hidden;
 }
 .title{
     text-align: center;
@@ -84,7 +85,10 @@ body{
 .taskbar{
     display: flex;
     flex-direction:row;
+    gap:1%;
+    margin-left: 5%;
 }
-p{
+button{
     color: rgba(228,6,27,255);
+    background: rgba(1,22,41,255);
 }

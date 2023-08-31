@@ -26,14 +26,21 @@
             leftSide.classList.add('loadedLeft')
             rightSide.classList.add('loadedRight')
             console.log("Loaded")
+            setTimeout(() => {
+                const imageHolder = document.querySelector(".imageHolder");
+                if (imageHolder) {
+                    imageHolder.parentNode.removeChild(imageHolder);
+                }
+            }, 6000);
         </script>
+
         <div class="menu">
             <h1 class="title">Welcome to the ECE 5 SU23 Red Bull Racing Team</h1>
             <div class="taskbar">
-                <p>Home</p>
-                <p>Robot Images</p>
-                <p>About us</p>
-                <p>Links</p>
+                <button>Home</button>
+                <button>Robot Images</button>
+                <button>About us</button>
+                <button>Links</button>
             </div>
         </div>
         </body>
