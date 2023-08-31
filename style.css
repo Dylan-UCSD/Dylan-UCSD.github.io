@@ -81,3 +81,10 @@ body{
     z-index: 1;
     
 }
+.taskbar{
+    display: flex;
+    flex-direction:row;
+}
+p{
+    color: rgba(228,6,27,255);
+}
