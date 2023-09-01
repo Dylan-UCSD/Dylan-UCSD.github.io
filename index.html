@@ -25,17 +25,20 @@
             <img src ="./images/red-bull-racing-logo-right-side.png" alt = "rbr" class="loadingScreenRight"/>
         </div>
         <script>
-            const leftSide = document.querySelector('.loadingScreenLeft')
-            const rightSide = document.querySelector('.loadingScreenRight')
-            leftSide.classList.add('loadedLeft')
-            rightSide.classList.add('loadedRight')
-            console.log("Loaded")
-            setTimeout(() => {
-                const imageHolder = document.querySelector(".imageHolder");
-                if (imageHolder) {
-                    imageHolder.parentNode.removeChild(imageHolder);
-                }
-            }, 5000);
+            setTimeout(()=>{
+                const leftSide = document.querySelector('.loadingScreenLeft')
+                const rightSide = document.querySelector('.loadingScreenRight')
+                leftSide.classList.add('loadedLeft')
+                rightSide.classList.add('loadedRight')
+                console.log(leftSide)
+                console.log(rightSide)
+                console.log("Loaded")
+                setTimeout(() => {
+                    const imageHolder = document.querySelector(".imageHolder");
+                    if (imageHolder) {
+                        imageHolder.parentNode.removeChild(imageHolder);
+                    }
+                }, 6000);}, 100)
         </script>
 
         <div class="menu">
