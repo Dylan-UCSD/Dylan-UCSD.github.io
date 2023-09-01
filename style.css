@@ -6,15 +6,13 @@ html{
 body{
     background: rgba(1,22,41,255);
     overflow-x: hidden;
-}
-.title{
-    text-align: center;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .loadingScreen{
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     opacity:1;
     transform: translateX(0px);
     transition:
@@ -25,8 +23,8 @@ body{
 
 }
 .loadingScreenLeft{
-    width: 50vw;
-    height: 100vh;
+    width: 51vw;
+    height: 101vh;
     opacity:1;
     /*transform: translateX(0px);*/
     transition:
@@ -38,17 +36,17 @@ body{
 }
 .title{
     font-weight: bold; 
-    font-size: 50px; 
+    font-size: 70px; 
     color: rgba(228,6,27,255);
     padding-top: 30px;
-
+    text-align: center;
 }
 .imageHolder{
     display:flex; 
     flex-direction: row; 
     overflow: hidden;
     z-index: 2;
-    position: absolute;
+    position: fixed;
 }
 .loadingScreenRight{
     width: 50vw;

@@ -10,7 +10,13 @@
     <body>
         <script>
             function scrollToIMG(){
-                document.getElementById("blackhole").scrollIntoView({ behavior: "smooth" });
+                document.getElementById("topImg").scrollIntoView({ behavior: "smooth" });
+            }
+            function potato(){
+                alert("You're already here")
+            }
+            function WIP(){
+                alert("This Doesn't Exist Yet")
             }
         </script>
         <div class="bigBoi">
@@ -38,7 +44,7 @@
                     if (imageHolder) {
                         imageHolder.parentNode.removeChild(imageHolder);
                     }
-                }, 6000);}, 100)
+                }, 4000);}, 100)
         </script>
 
         <div class="menu">
@@ -48,16 +54,22 @@
                 <h1 class="title">Welcome to the ECE 5 SU23 Red Bull Racing Team</h1>
             
             <taskbar class="taskbar">
-                <button>Home</button>
+                <button onclick="potato()">Home</button>
                 <button onclick="scrollToIMG()">Robot Images</button>
-                <button>About us</button>
-                <button>Links</button>
+                <button onclick="WIP()">About us</button>
+                <button onclick="WIP()">Links</button>
+            </taskbar>
+        </div>
+        <div class="center" style="flex-direction: column;">
+            <h1 class="title" style="font-size: 50px;">Robot Images</h1>
+            <div class="center" style="flex-direction: row;"><img id="topImg" style="margin-top: 10px;max-width: 30vw; scale: 1;" src="images/robot-1" alt="robot"/>
+                <img style="margin-top: 10px;max-width: 30vw; scale: 1;" src="images/robot-2" alt="robot"/>
+                <img  style="margin-top: 10px;max-width: 30vw;scale: 1;" src="images/robot-3" alt="robot"/>
+            
             </div>
         </div>
-        <div class="center"><img id="blackhole" style="margin-top: 10px;" src="images/interstellar_bh.webp" alt="black hole"/></div>
-        
-    </div>
-        </body>
+        </div>
+    </body>
 
 
 </html>
