@@ -8,6 +8,11 @@
         <link rel="stylesheet" href = "style.css"/>
     </head>
     <body>
+        <script>
+            function scrollToIMG(){
+                document.getElementById("blackhole").scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
         <div class="bigBoi">
         <!--<img src="images/red-bull-racing-logo-1.jpg" alt="rbr" class="loadingScreen">
         <script>
@@ -22,8 +27,6 @@
         <script>
             const leftSide = document.querySelector('.loadingScreenLeft')
             const rightSide = document.querySelector('.loadingScreenRight')
-            console.log(leftSide)
-            console.log(rightSide)
             leftSide.classList.add('loadedLeft')
             rightSide.classList.add('loadedRight')
             console.log("Loaded")
@@ -32,7 +35,7 @@
                 if (imageHolder) {
                     imageHolder.parentNode.removeChild(imageHolder);
                 }
-            }, 6000);
+            }, 5000);
         </script>
 
         <div class="menu">
@@ -43,11 +46,12 @@
             
             <taskbar class="taskbar">
                 <button>Home</button>
-                <button>Robot Images</button>
+                <button onclick="scrollToIMG()">Robot Images</button>
                 <button>About us</button>
                 <button>Links</button>
             </div>
         </div>
+        <div class="center"><img id="blackhole" style="margin-top: 10px;" src="images/interstellar_bh.webp" alt="black hole"/></div>
         
     </div>
         </body>
