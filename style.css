@@ -95,9 +95,9 @@ button{
     font-family:"Orbitron", sans-serif;
     color: rgba(228,6,27,255);
     background: rgba(1,22,41,255);
-    height: 5vh;
+    height: 7vh;
     width: 15vw;
-    font-size: 40px;
+    font-size: 30px;
 }
 .bigBoi{
     border: 5px solid white;
