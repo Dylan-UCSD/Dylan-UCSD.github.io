@@ -123,3 +123,12 @@ button{
     align-items: center;
     
 }
+::-webkit-scrollbar{
+    width: 0.75vw;
+    background-color: rgba(1,22,41,255);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    color: rbga(136,136,136,0.5);
+    
+}
