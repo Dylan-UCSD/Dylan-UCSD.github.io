@@ -1,0 +1,24 @@
+/* Add your CSS styles here */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+}
+
+.carousel-slide img {
+    width: 400px;
+    height: 600px;
+    scale: 1;
+}
+body{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

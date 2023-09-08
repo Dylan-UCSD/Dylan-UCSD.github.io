@@ -2,6 +2,7 @@
 html{
     font-family:"Orbitron", sans-serif;
     background: green 2px solid line;
+    
 }
 body{
     background: rgba(1,22,41,255);
@@ -130,4 +131,27 @@ button{
 ::-webkit-scrollbar-thumb{
     border-radius: 20px;
     background-color: white;
+}
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+}
+
+.carousel-slide img {
+    width: 400px;
+    height: 600px;
+    scale: 1;
+}
+.carousel{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
