@@ -157,13 +157,13 @@ button{
 }
 .question{
     color: blue;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     
 }
 .answer{
     padding: 2%;
-    font-size: 50px;
+    font-size: 30px;
     color: red;
     border: 1px white solid;
     border-radius: 15px;
