@@ -1,4 +1,4 @@
-setTimeout(()=>{
+addEventListener("DOMLoadedContent",()=>{
     const leftSide = document.querySelector('.loadingScreenLeft')
     const rightSide = document.querySelector('.loadingScreenRight')
     //const  
@@ -13,8 +13,11 @@ setTimeout(()=>{
             imageHolder.parentNode.removeChild(imageHolder);
         }
     }, 3500)
+    let lazyList = document.querySelectorAll(".lazy-load")
+    lazyList.forEach(lazy => {
+        lazy.setAttribute('src',lazy.getAttribute('data-src'))
+    });
 
 
 
-
-}, 100)
+})

@@ -1,10 +1,10 @@
 const prevButton = document.getElementById('prevBtn');
 const nextButton = document.getElementById('nextBtn');
-const prevB = document.getElementById('prev');
-const nextB = document.getElementById('next');
+/*const prevB = document.getElementById('prev');
+const nextB = document.getElementById('next');*/
 const slides = document.querySelectorAll('.carousel-slide');
-const slidees = document.querySelectorAll('.carousel-slide1')
-let currentIndex1 = 0;
+//const slidees = document.querySelectorAll('.carousel-slide1')
+//let currentIndex1 = 0;
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -17,7 +17,7 @@ function showSlide(index) {
     });
 }
 
-function prevSlide1() {
+/*function prevSlide1() {
     currentIndex = (currentIndex1 - 1 + slidees.length) % slidees.length;
     showSlide(currentIndex1);
 }
@@ -35,7 +35,7 @@ function showSlide1(index) {
             slidee.style.display = 'none';
         }
     });
-}
+}*/
 
 function prevSlide() {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
@@ -51,9 +51,9 @@ function nextSlide() {
 
 prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
-prevB.addEventListener('click', prevSlide1);
-nextB.addEventListener('click', nextSlide1);
+//prevB.addEventListener('click', prevSlide1);
+//nextB.addEventListener('click', nextSlide1);
 
 // Show the initial slide
 showSlide(currentIndex);
-showSlide1(currentIndex1);
+//showSlide1(currentIndex1);
